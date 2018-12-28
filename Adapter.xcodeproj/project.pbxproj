@@ -12,6 +12,13 @@
 		84AAC91921D66DFF003AFF41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AAC91721D66DFF003AFF41 /* Main.storyboard */; };
 		84AAC91B21D66E01003AFF41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84AAC91A21D66E01003AFF41 /* Assets.xcassets */; };
 		84AAC91E21D66E01003AFF41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AAC91C21D66E01003AFF41 /* LaunchScreen.storyboard */; };
+		84AAC92621D67410003AFF41 /* GoogleAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AAC92521D67410003AFF41 /* GoogleAuthorization.swift */; };
+		84AAC92821D674D7003AFF41 /* TwitterAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AAC92721D674D7003AFF41 /* TwitterAuthorization.swift */; };
+		84AAC92A21D67507003AFF41 /* AuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AAC92921D67507003AFF41 /* AuthorizationService.swift */; };
+		84AAC92C21D6759B003AFF41 /* GoogleAuthenticatorAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AAC92B21D6759B003AFF41 /* GoogleAuthenticatorAdapter.swift */; };
+		84AAC92E21D6768E003AFF41 /* TwitterAuthenticatorAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AAC92D21D6768E003AFF41 /* TwitterAuthenticatorAdapter.swift */; };
+		84AAC93221D68038003AFF41 /* easy example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AAC93121D68038003AFF41 /* easy example.swift */; };
+		84AAC93521D6852B003AFF41 /* adapter.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AAC93421D6852A003AFF41 /* adapter.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,14 @@
 		84AAC91A21D66E01003AFF41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84AAC91D21D66E01003AFF41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84AAC91F21D66E01003AFF41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84AAC92521D67410003AFF41 /* GoogleAuthorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthorization.swift; sourceTree = "<group>"; };
+		84AAC92721D674D7003AFF41 /* TwitterAuthorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAuthorization.swift; sourceTree = "<group>"; };
+		84AAC92921D67507003AFF41 /* AuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationService.swift; sourceTree = "<group>"; };
+		84AAC92B21D6759B003AFF41 /* GoogleAuthenticatorAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthenticatorAdapter.swift; sourceTree = "<group>"; };
+		84AAC92D21D6768E003AFF41 /* TwitterAuthenticatorAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAuthenticatorAdapter.swift; sourceTree = "<group>"; };
+		84AAC93121D68038003AFF41 /* easy example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "easy example.swift"; sourceTree = "<group>"; };
+		84AAC93321D680D4003AFF41 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		84AAC93421D6852A003AFF41 /* adapter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adapter.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +53,8 @@
 		84AAC90721D66DFE003AFF41 = {
 			isa = PBXGroup;
 			children = (
+				84AAC93321D680D4003AFF41 /* README.md */,
+				84AAC93721D68546003AFF41 /* images */,
 				84AAC91221D66DFE003AFF41 /* Adapter */,
 				84AAC91121D66DFE003AFF41 /* Products */,
 			);
@@ -56,12 +73,42 @@
 			children = (
 				84AAC91321D66DFF003AFF41 /* AppDelegate.swift */,
 				84AAC91521D66DFF003AFF41 /* ViewController.swift */,
+				84AAC93021D677A3003AFF41 /* Auth */,
+				84AAC92F21D6778E003AFF41 /* Adapters */,
 				84AAC91721D66DFF003AFF41 /* Main.storyboard */,
 				84AAC91A21D66E01003AFF41 /* Assets.xcassets */,
 				84AAC91C21D66E01003AFF41 /* LaunchScreen.storyboard */,
 				84AAC91F21D66E01003AFF41 /* Info.plist */,
+				84AAC93121D68038003AFF41 /* easy example.swift */,
 			);
 			path = Adapter;
+			sourceTree = "<group>";
+		};
+		84AAC92F21D6778E003AFF41 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				84AAC92B21D6759B003AFF41 /* GoogleAuthenticatorAdapter.swift */,
+				84AAC92D21D6768E003AFF41 /* TwitterAuthenticatorAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		84AAC93021D677A3003AFF41 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				84AAC92921D67507003AFF41 /* AuthorizationService.swift */,
+				84AAC92521D67410003AFF41 /* GoogleAuthorization.swift */,
+				84AAC92721D674D7003AFF41 /* TwitterAuthorization.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		84AAC93721D68546003AFF41 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				84AAC93421D6852A003AFF41 /* adapter.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +172,7 @@
 				84AAC91E21D66E01003AFF41 /* LaunchScreen.storyboard in Resources */,
 				84AAC91B21D66E01003AFF41 /* Assets.xcassets in Resources */,
 				84AAC91921D66DFF003AFF41 /* Main.storyboard in Resources */,
+				84AAC93521D6852B003AFF41 /* adapter.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +183,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84AAC92C21D6759B003AFF41 /* GoogleAuthenticatorAdapter.swift in Sources */,
+				84AAC92E21D6768E003AFF41 /* TwitterAuthenticatorAdapter.swift in Sources */,
 				84AAC91621D66DFF003AFF41 /* ViewController.swift in Sources */,
+				84AAC93221D68038003AFF41 /* easy example.swift in Sources */,
 				84AAC91421D66DFF003AFF41 /* AppDelegate.swift in Sources */,
+				84AAC92621D67410003AFF41 /* GoogleAuthorization.swift in Sources */,
+				84AAC92821D674D7003AFF41 /* TwitterAuthorization.swift in Sources */,
+				84AAC92A21D67507003AFF41 /* AuthorizationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
